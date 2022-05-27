@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:dev": "ng build --aot --localize --configuration=development && npx copyfiles -f ./netlify/* dist/angular-cloudflare",
+    "build:dev": "ng build --aot --localize --configuration=development && copyfiles -f .netlify/* dist/angular-cloudflare",
     "i18n:en": "ng extract-i18n --format xliff --output-path ./src/locales --out-file messages.xlf",
     "i18n:nl": "ng extract-i18n --format xliff --output-path ./src/locales --out-file messages.nl.xlf"
   },
