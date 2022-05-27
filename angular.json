@@ -64,6 +64,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "nl":{
+              "localize":["nl"]
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +79,9 @@
             },
             "development": {
               "browserTarget": "angular-cloudflare:build:development"
+            },
+            "nl": {
+              "browserTarget": "angular-cloudflare:build:nl"
             }
           },
           "defaultConfiguration": "development"
@@ -102,6 +108,15 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      },
+      "i18n": {
+        "sourceLocale":"en-US",
+        "locales": {
+          "nl": {
+            "translation":"src/locales/messages.nl.xlf",
+            "baseHref":"/nl/"
           }
         }
       }
